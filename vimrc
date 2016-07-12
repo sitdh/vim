@@ -1,4 +1,4 @@
-colorscheme badwolf
+colorscheme badwolf/badwolf
 
 syntax enable
 set tabstop=4
@@ -51,6 +51,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'lervag/vimtex'
+Plugin 'sjl/badwolf'
 
 call vundle#end()
 
