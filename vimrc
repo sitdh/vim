@@ -1,5 +1,3 @@
-colorscheme badwolf/badwolf
-
 syntax enable
 set tabstop=4
 set softtabstop=4
@@ -54,6 +52,8 @@ Plugin 'lervag/vimtex'
 Plugin 'sjl/badwolf'
 
 call vundle#end()
+
+colorscheme badwolf
 
 if exists('$TMUX')
     let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
