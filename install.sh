@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 ln -fs ~/.vim/vimrc ~/.vimrc
 
 vim +PluginInstall +qall
