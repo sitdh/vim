@@ -50,6 +50,7 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'lervag/vimtex'
 Plugin 'sjl/badwolf'
+Plugin 'mfukar/robotframework-vim'
 
 call vundle#end()
 
