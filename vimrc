@@ -12,6 +12,14 @@ set lazyredraw
 set showmatch
 set incsearch
 set hlsearch
+set nobackup
+set ruler
+set hlsearch
+set incsearch
+set showmatch
+set ignorecase
+set smartcase
+
 nnoremap <leader><space> :nohlsearch<CR>
 
 set foldenable
