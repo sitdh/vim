@@ -1,5 +1,4 @@
 .DS_Store
-bundle/
-!bundle/Vundle.vim
 colors/
+*.swp
 .netrwhist

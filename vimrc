@@ -37,24 +37,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Plugin 'kien/ctrlp.vim'
-" Plugin 'JulesWang/css.vim'
-" Plugin 'Raimondi/delimitMate'
 Plugin 'emmetio/emmet'
-" Plugin 'mattn/emmet-vim'
-" Plugin 'powerline/powerline'
-" Plugin 'cakebaker/scss-syntax.vim'
-" Plugin 'leafgarland/typescript-vim'
-" Plugin 'tpope/vim-bundler'
-" Plugin 'tpope/vim-fugitive'
-" Plugin 'tpope/vim-ragtag'
-" Plugin 'tpope/vim-rails'
-" Plugin 'vim-ruby/vim-ruby'
-" Plugin 'tpope/vim-speeddating'
-" Plugin 'tpope/vim-surround'
-" Plugin 'lervag/vimtex'
+Plugin 'tpope/vim-surround'
 Plugin 'sjl/badwolf'
-" Plugin 'mfukar/robotframework-vim'
 
 call vundle#end()
 
@@ -82,3 +67,5 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " Snippets
 nnoremap \thaitex :-1read $HOME/.vim/snippets/thaitex.snip<CR>17jA
+nnoremap \date :-1read !$HOME/.vim/snippets/date.sh<CR>
+nnoremap \dt :-1read !$HOME/.vim/snippets/datetime.sh<CR>
