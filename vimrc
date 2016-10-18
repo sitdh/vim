@@ -6,7 +6,6 @@ set shiftwidth=4
 set expandtab
 set number
 set showcmd
-set cursorline
 set wildmenu
 set lazyredraw
 set showmatch
@@ -33,32 +32,29 @@ nnoremap k gk
 
 nnoremap gV `[v`]
 
-" call pathogen#infect()
-" call pathogen#runtime_append_all_bundles()
-
 set nocompatible 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'kien/ctrlp.vim'
-Plugin 'JulesWang/css.vim'
-Plugin 'Raimondi/delimitMate'
-" Plugin 'emmetio/emmet'
-Plugin 'mattn/emmet-vim'
-Plugin 'powerline/powerline'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-ragtag'
-Plugin 'tpope/vim-rails'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-speeddating'
-Plugin 'tpope/vim-surround'
-Plugin 'lervag/vimtex'
+" Plugin 'kien/ctrlp.vim'
+" Plugin 'JulesWang/css.vim'
+" Plugin 'Raimondi/delimitMate'
+Plugin 'emmetio/emmet'
+" Plugin 'mattn/emmet-vim'
+" Plugin 'powerline/powerline'
+" Plugin 'cakebaker/scss-syntax.vim'
+" Plugin 'leafgarland/typescript-vim'
+" Plugin 'tpope/vim-bundler'
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-ragtag'
+" Plugin 'tpope/vim-rails'
+" Plugin 'vim-ruby/vim-ruby'
+" Plugin 'tpope/vim-speeddating'
+" Plugin 'tpope/vim-surround'
+" Plugin 'lervag/vimtex'
 Plugin 'sjl/badwolf'
-Plugin 'mfukar/robotframework-vim'
+" Plugin 'mfukar/robotframework-vim'
 
 call vundle#end()
 
@@ -74,3 +70,15 @@ endif
 
 set ai
 filetype plugin indent on 
+set path+=**
+set wildmenu
+command! MakeTags !ctags -R 
+let g:netrw_banner=0        " disable annoying banner
+let g:netrw_browse_split=4  " open in prior window
+let g:netrw_altv=1          " open splits to the right
+let g:netrw_liststyle=3     " tree view
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+
+" Snippets
+nnoremap \thaitex :-1read $HOME/.vim/snippets/thaitex.snip<CR>17jA
