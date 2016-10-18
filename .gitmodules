@@ -4,3 +4,12 @@
 [submodule "color/badwolf"]
 	path = color/badwolf
 	url = https://github.com/sjl/badwolf
+[submodule "bundle/badwolf"]
+	path = bundle/badwolf
+	url = https://github.com/sjl/badwolf.git
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = https://github.com/emmetio/emmet
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
