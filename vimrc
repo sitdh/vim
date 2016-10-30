@@ -4,7 +4,7 @@ set softtabstop=4
 set shiftwidth=4
 
 set expandtab
-set number
+set relativenumber
 set showcmd
 set wildmenu
 set lazyredraw
@@ -67,5 +67,6 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " Snippets
 nnoremap \thaitex :-1read $HOME/.vim/snippets/thaitex.snip<CR>17jA
+nnoremap \myinfo :-1read $HOME/.vim/snippets/myinfo.snip<CR>
 nnoremap \date :-1read !$HOME/.vim/snippets/date.sh<CR>
 nnoremap \dt :-1read !$HOME/.vim/snippets/datetime.sh<CR>
