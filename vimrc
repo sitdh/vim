@@ -54,9 +54,12 @@ else
 endif
 
 set ai
+
 filetype plugin indent on 
+
 set path+=**
 set wildmenu
+
 command! MakeTags !ctags -R 
 let g:netrw_banner=0        " disable annoying banner
 let g:netrw_browse_split=4  " open in prior window
