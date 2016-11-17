@@ -68,8 +68,12 @@ let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
+" - - - - - - - - - - - - - - - - - - - - 
 " Snippets
-nnoremap \thaitex :-1read $HOME/.vim/snippets/thaitex.snip<CR>17jA
-nnoremap \myinfo :-1read $HOME/.vim/snippets/myinfo.snip<CR>
 nnoremap \date :-1read !$HOME/.vim/snippets/date.sh<CR>
 nnoremap \dt :-1read !$HOME/.vim/snippets/datetime.sh<CR>
+
+" -- LaTeX:
+nnoremap \myinfo :-1read $HOME/.vim/snippets/myinfo.snip<CR>
+nnoremap \thaitex :-1read $HOME/.vim/snippets/thaitex.snip<CR>17jA
+nnoremap \section :-1read !$HOME/.vim/snippets/section-refine.tex.snip<CR>
