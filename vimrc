@@ -37,7 +37,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'emmetio/emmet'
+" Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'sjl/badwolf'
 
