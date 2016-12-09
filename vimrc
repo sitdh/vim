@@ -2,6 +2,7 @@ syntax enable
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set backspace=2
 
 set expandtab
 set relativenumber
@@ -18,6 +19,7 @@ set incsearch
 set showmatch
 set ignorecase
 set smartcase
+set number
 
 nnoremap <leader><space> :nohlsearch<CR>
 
@@ -67,6 +69,14 @@ let g:netrw_altv=1          " open splits to the right
 let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+
+" - - - - - - - - - - - - - - - - - - - - 
+"   Functions
+function! SortLines() range
+    execute a:firstline . "," . a:lastline . 's/^\(.*\)$/\=strdisplaywidth( submatch(0) ) . " " . submatch(0)/'
+    execute a:firstline . "," . a:lastline . 'sort n'
+    execute a:firstline . "," . a:lastline . 's/^\d\+\s//'
+endfunction
 
 " - - - - - - - - - - - - - - - - - - - - 
 " Snippets
