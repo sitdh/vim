@@ -8,5 +8,5 @@ My Vim configuration
 
 ## Installation guide
 ```bash
-$ make 
-$ make update
+$ make && make update
+```
