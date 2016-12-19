@@ -86,4 +86,5 @@ nnoremap \dt :-1read !$HOME/.vim/snippets/datetime.sh<CR>
 " -- LaTeX:
 nnoremap \myinfo :-1read $HOME/.vim/snippets/myinfo.snip<CR>
 nnoremap \thaitex :-1read $HOME/.vim/snippets/thaitex.snip<CR>17jA
+nnoremap \thbeamer :-1read $HOME/.vim/snippets/thbeamer.snip<CR>16jA
 nnoremap \section :-1read !$HOME/.vim/snippets/section-refine.tex.snip<CR>
