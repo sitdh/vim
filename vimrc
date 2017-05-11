@@ -39,9 +39,10 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Plugin 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'sjl/badwolf'
+Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()
 
@@ -82,6 +83,7 @@ endfunction
 " Snippets
 nnoremap \date :-1read !$HOME/.vim/snippets/date.sh<CR>
 nnoremap \dt :-1read !$HOME/.vim/snippets/datetime.sh<CR>
+nnoremap \amp :-1read !$HOME/.vim/snippets/ampboilerp.snip<CR>
 
 " -- LaTeX:
 nnoremap \myinfo :-1read $HOME/.vim/snippets/myinfo.snip<CR>
