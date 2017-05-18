@@ -4,6 +4,10 @@ set softtabstop=4
 set shiftwidth=4
 set backspace=2
 
+" Extra configuration for each project
+set exrc
+set secure
+
 set expandtab
 set relativenumber
 set showcmd
