@@ -27,6 +27,8 @@ set number
 
 nnoremap <leader><space> :nohlsearch<CR>
 
+language en_US
+
 set foldenable
 set foldlevelstart=10
 set foldnestmax=10
@@ -47,6 +49,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'sjl/badwolf'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'dhruvasagar/vim-table-mode'
 
 call vundle#end()
 
