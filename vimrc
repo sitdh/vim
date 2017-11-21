@@ -1,7 +1,7 @@
 syntax enable
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set backspace=2
 
 " Extra configuration for each project
@@ -79,6 +79,7 @@ let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 let g:jsx_ext_required = 0  " Allow JSX in normal JS files
+let g:syntastic_javascript_checkers = ['eslint']  " Allow JSX in normal JS files
 
 " - - - - - - - - - - - - - - - - - - - - 
 "   Functions
