@@ -51,6 +51,7 @@ Plugin 'sjl/badwolf'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'mxw/vim-jsx'
+Plugin 'aserebryakov/vim-todo-lists'
 
 call vundle#end()
 
