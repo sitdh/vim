@@ -3,3 +3,4 @@ colors/
 *.swp
 .netrwhist
 bundle/**/
+pack/minpac/
