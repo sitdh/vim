@@ -4,7 +4,6 @@ init:
 	@mkdir -p $VIMCONFIG/pack/bundle{start,opt}
 	@ln -fs ~/.vim/vimrc ~/.vimrc
 	@make update
-	@make plugin
 
 plugin:
 	@npm install -g eslint
