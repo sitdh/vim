@@ -100,7 +100,6 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " Colour Theme
 set termguicolors 
 let ayucolor="mirage"
-colorscheme ayu
 
 " - - - - - - - - - - - - - - - - - - - - 
 " Snippets
