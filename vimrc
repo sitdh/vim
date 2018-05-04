@@ -40,23 +40,6 @@ nnoremap k gk
 
 nnoremap gV `[v`]
 
-set nocompatible 
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'mattn/emmet-vim'
-Plugin 'tpope/vim-surround'
-Plugin 'sjl/badwolf'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'mxw/vim-jsx'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ayu-theme/ayu-vim'
-
-call vundle#end()
-
 colorscheme badwolf
 
 if exists('$TMUX')
