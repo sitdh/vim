@@ -2,4 +2,4 @@
 colors/
 *.swp
 .netrwhist
-pack/bundle/
+bundle/
