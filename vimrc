@@ -51,7 +51,9 @@ Plugin 'sjl/badwolf'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'mxw/vim-jsx'
-Plugin 'aserebryakov/vim-todo-lists'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'ayu-theme/ayu-vim'
 
 call vundle#end()
 
@@ -72,6 +74,12 @@ filetype plugin indent on
 set path+=**
 set wildmenu
 
+" - - - - - - - - - - - - - - - - - - - - 
+"   Mapping
+map <C-n> :NERDTreeToggle<CR>
+
+" - - - - - - - - - - - - - - - - - - - - 
+"   Configuration
 command! MakeTags !ctags -R 
 let g:netrw_banner=0        " disable annoying banner
 let g:netrw_browse_split=4  " open in prior window
@@ -81,6 +89,18 @@ let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 let g:jsx_ext_required = 0  " Allow JSX in normal JS files
 let g:syntastic_javascript_checkers = ['eslint']  " Allow JSX in normal JS files
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
 
 " - - - - - - - - - - - - - - - - - - - - 
 "   Functions
@@ -89,6 +109,15 @@ function! SortLines() range
     execute a:firstline . "," . a:lastline . 'sort n'
     execute a:firstline . "," . a:lastline . 's/^\d\+\s//'
 endfunction
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif        
+
+" - - - - - - - - - - - - - - - - - - - - 
+" Colour Theme
+set termguicolors 
+let ayucolor="mirage"
+colorscheme ayu
 
 " - - - - - - - - - - - - - - - - - - - - 
 " Snippets
