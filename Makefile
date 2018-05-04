@@ -1,4 +1,7 @@
 init:
+	@export VIMCONFIG="~/.vim"
+	@export VIMDATA="~/.vim"
+	@mkdir -p $VIMCONFIG/pack/bundle{start,opt}
 	@ln -fs ~/.vim/vimrc ~/.vimrc
 	@make update
 	@make plugin
