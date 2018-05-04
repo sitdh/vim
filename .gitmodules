@@ -1,18 +1,15 @@
-[submodule "bundle/Vundle.vim"]
+[submodule "pack/bundle/start/Vundle.vim"]
 	path = pack/bundle/start/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
-[submodule "color/badwolf"]
-	path = pack/bundle/start/color/badwolf
-	url = https://github.com/sjl/badwolf
-[submodule "bundle/badwolf"]
+[submodule "pack/bundle/start/badwolf"]
 	path = pack/bundle/start/badwolf
-	url = https://github.com/sjl/badwolf.git
-[submodule "bundle/emmet-vim"]
+	url = https://github.com/sjl/badwolf
+[submodule "pack/bundle/start/emmet-vim"]
 	path = pack/bundle/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim
-[submodule "bundle/vim-surround"]
+[submodule "pack/bundle/start/vim-surround"]
 	path = pack/bundle/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/vim-table-mode"]
+[submodule "pack/bundle/start/vim-table-mode"]
 	path = pack/bundle/start/vim-table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
