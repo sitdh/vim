@@ -1,6 +1,3 @@
-[submodule "pack/bundle/opt/--force"]
-	path = pack/bundle/opt/--force
-	url = https://github.com/k-takata/minpac
 [submodule "pack/bundle/opt/minpac"]
 	path = pack/bundle/opt/minpac
 	url = https://github.com/k-takata/minpac
